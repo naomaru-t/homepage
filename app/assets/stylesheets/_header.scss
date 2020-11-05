@@ -1,0 +1,43 @@
+.header{
+  height:100px;
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  &__left{
+    padding:5px 0 0 100px;
+    img{
+      height:50px;
+      margin:5px 0 5px 5px;
+    }
+    .details{
+      display:flex;
+      .detail{
+        font-size:15px;
+        border-bottom:1px solid grey;
+        border-right:1px solid grey;
+        padding:0 40px 0 40px;
+        a{
+          text-decoration: none;
+          color:black;
+        }
+      }
+    }
+  }
+  &__right{
+    .otoi{
+      font-size:13px;
+      padding: 20px 50px 0 0;
+    }
+    .denwa{
+      display:flex;
+      .tel{
+        padding:10px;
+        font-size:15px;
+      }
+      .suuji{
+        font-size:25px;
+        color:aqua;
+      }
+    }
+  }
+}
