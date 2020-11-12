@@ -4,24 +4,21 @@
 .toppage {
   height: 100vh;
   width: 100vw;
-  background-color: crimson;
-
   &__header {
-    height: 100px;
-    width: 100%;
-    background-color: cyan;
+    height: 150px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
   }
   &__contents {
     height: calc(100% - 300px);
     width: 100%;
-    background-color: darkorange;
-    display: block;
+    margin-top: 30px;
     &__toplogobox {
       height: 220px;
       width: 100%;
-      background-color: greenyellow;
       &__logo {
-        background-color:rgb(187, 185, 185);
         height:220px;
         text-align:center;
         margin:5px 0 0 0;
@@ -36,13 +33,11 @@
       height: 100%;
       width: 100%;
       display: flex;
-      background-color: hotpink;
       margin-top: 5px;
       position: relative;
       &__left {
         height: 100%;
         width: 300px;
-        background-color: indigo;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -50,19 +45,16 @@
         overflow: hidden;
         &__box {
           height: 100%;
-          width: 60%;
-          background-color: orangered;
+          width: 70%;
+          background-color: gainsboro;
           position: relative;
-          padding-top: 30px;
           &__menu {
             height: 100%;
             width: 100%;
-            background-color: palegreen;
             position: relative;
             &__help {
               height: 50px;
               width: 100%;
-              background-color: white;
               position: relative;
               font-size: 45px;
               text-align: center;
@@ -70,32 +62,39 @@
               justify-content: center;
               align-items: center;
               margin-bottom: 10px;
+              background-color: gray;
+              margin-bottom: 5px;
+              color: honeydew;
             }
             &__nakami {
               height: 100%;
               width: 100%;
-              background-color: violet;
               position: relative;
-              padding-top: 30px;
               &__content {
                 height: 1000px;
                 width: 100%;
                 display: block;
                 justify-content: center;
-                background-color: tomato;
                 position: relative;
                 overflow: scroll;
                 &__s {
                   position: relative;
-                  background-color: slategray;
                   &__list {
                     display: block;
                     height: 30px;
                     width: 100%;
-                    margin-top: 50px;
+                    margin-top: 20px;
                     text-align: center;
+                    vertical-align: middle;
+                    padding-top: 15px;
                     background-color: turquoise;
-
+                    a {
+                      text-decoration: none;
+                      color:black;
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                    }
                   }
                 }
                 &__intro {
@@ -153,3 +152,4 @@
 //       padding-top:10px;
 //     }
 //   }
+

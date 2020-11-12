@@ -1,24 +1,39 @@
 .header{
-  height:100px;
-  width:100%;
-  display:flex;
-  justify-content:space-between;
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
   &__left{
-    padding:5px 0 0 100px;
+    padding:10px 0 0 100px;
     img{
       height:50px;
       margin:5px 0 5px 5px;
     }
     .details{
-      display:flex;
+      display: flex;
+      width: 100%;
+      height: 50px;
+      justify-content: space-between;
+      align-items: center;
       .detail{
-        font-size:15px;
-        border-bottom:1px solid grey;
-        border-right:1px solid grey;
-        padding:0 40px 0 40px;
+        font-size: 15px;
+        //border: 1px solid black;
+        margin-right: 10px;
+        //padding:0 40px 0 40px;
+        text-align: center;
+        vertical-align: middle;
+        width: auto;
+        height: 100%;
+        padding: 0 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         a{
           text-decoration: none;
           color:black;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
     }
@@ -31,12 +46,21 @@
     .denwa{
       display:flex;
       .tel{
-        padding:10px;
+        padding:5px;
         font-size:15px;
       }
       .suuji{
         font-size:25px;
-        color:aqua;
+      }
+    }
+    .mails {
+      display:flex;
+      .adless {
+        padding:5px;
+        font-size:15px;
+      }
+      .mail {
+        font-size:20px;
       }
     }
   }
