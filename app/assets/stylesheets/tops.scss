@@ -1,18 +1,155 @@
-.toppage{
-  .logo{
-    background-color:rgb(187, 185, 185);
-    height:220px;
-    text-align:center;
-    margin:5px 0 0 0;
-    img{
-      height:200px;
-      width:900px;
-      padding-top:10px;
+
+@import "reset";
+
+.toppage {
+  height: 100vh;
+  width: 100vw;
+  background-color: crimson;
+
+  &__header {
+    height: 100px;
+    width: 100%;
+    background-color: cyan;
+  }
+  &__contents {
+    height: calc(100% - 300px);
+    width: 100%;
+    background-color: darkorange;
+    display: block;
+    &__toplogobox {
+      height: 220px;
+      width: 100%;
+      background-color: greenyellow;
+      &__logo {
+        background-color:rgb(187, 185, 185);
+        height:220px;
+        text-align:center;
+        margin:5px 0 0 0;
+        img{
+          height:200px;
+          width:900px;
+          padding-top:10px;
+        }
+      }
+    }
+    &__mainbox {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      background-color: hotpink;
+      margin-top: 5px;
+      position: relative;
+      &__left {
+        height: 100%;
+        width: 300px;
+        background-color: indigo;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        overflow: hidden;
+        &__box {
+          height: 100%;
+          width: 60%;
+          background-color: orangered;
+          position: relative;
+          padding-top: 30px;
+          &__menu {
+            height: 100%;
+            width: 100%;
+            background-color: palegreen;
+            position: relative;
+            &__help {
+              height: 50px;
+              width: 100%;
+              background-color: white;
+              position: relative;
+              font-size: 45px;
+              text-align: center;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-bottom: 10px;
+            }
+            &__nakami {
+              height: 100%;
+              width: 100%;
+              background-color: violet;
+              position: relative;
+              padding-top: 30px;
+              &__content {
+                height: 1000px;
+                width: 100%;
+                display: block;
+                justify-content: center;
+                background-color: tomato;
+                position: relative;
+                overflow: scroll;
+                &__s {
+                  position: relative;
+                  background-color: slategray;
+                  &__list {
+                    display: block;
+                    height: 30px;
+                    width: 100%;
+                    margin-top: 50px;
+                    text-align: center;
+                    background-color: turquoise;
+
+                  }
+                }
+                &__intro {
+                  height: 100%;
+                  width: 100%;
+                  background-color: yellowgreen;
+                }
+              }
+            }
+          }
+        }
+      }
+      &__right {
+        height: 100%;
+        width: calc(100% - 300px);
+        background-color: navajowhite;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__box {
+          height: 90%;
+          width: 90%;
+          background-color: olive;
+          overflow: scroll;
+          &__menu {
+            height: 400px;
+            width: 100%;
+            background-color: royalblue;
+          }
+          &__contents {
+            height: 900px;
+            width: 100%;
+            background-color: salmon;
+          }
+        }
+      }
+    }
+    &__footer {
+      height: 100px;
+      width: 100%;
+      background-color: navy;
     }
   }
-  .footer{
-    background-color:rgb(56, 56, 56);
-    height:100px;
-    width:100%;
-  }
 }
+// =======
+// .toppage{
+//   .logo{
+//     background-color:rgb(187, 185, 185);
+//     height:220px;
+//     text-align:center;
+//     margin:5px 0 0 0;
+//     img{
+//       height:200px;
+//       width:900px;
+//       padding-top:10px;
+//     }
+//   }
