@@ -1,9 +1,10 @@
 .toppage
   .toppage__header
-    HEADER
+    = render "header"
   .toppage__contents
     .toppage__contents__toplogobox
-
+      .toppage__contents__toplogobox__logo
+        = image_tag 'evouove.png'
     .toppage__contents__mainbox
       .toppage__contents__mainbox__left
         .toppage__contents__mainbox__left__box
@@ -31,3 +32,14 @@
 
 
     .toppage__contents__footer
+-# =======
+-#   .header
+-#     = render "header"
+-#   .logo
+-#     = image_tag 'evouove.png'
+-#   .content
+-#   .footer
+-#     .footer__left
+-#     .footer__right
+    
+-# >>>>>>> master

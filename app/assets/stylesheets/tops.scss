@@ -1,3 +1,4 @@
+
 @import "reset";
 
 .toppage {
@@ -16,9 +17,20 @@
     background-color: darkorange;
     display: block;
     &__toplogobox {
-      height: 150px;
+      height: 220px;
       width: 100%;
       background-color: greenyellow;
+      &__logo {
+        background-color:rgb(187, 185, 185);
+        height:220px;
+        text-align:center;
+        margin:5px 0 0 0;
+        img{
+          height:200px;
+          width:900px;
+          padding-top:10px;
+        }
+      }
     }
     &__mainbox {
       height: 100%;
@@ -128,3 +140,16 @@
     }
   }
 }
+// =======
+// .toppage{
+//   .logo{
+//     background-color:rgb(187, 185, 185);
+//     height:220px;
+//     text-align:center;
+//     margin:5px 0 0 0;
+//     img{
+//       height:200px;
+//       width:900px;
+//       padding-top:10px;
+//     }
+//   }
